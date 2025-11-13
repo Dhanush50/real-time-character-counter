@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real-time Character Counter</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Real-time Character Counter</h1>
+            <p class="subtitle">Track your text length as you type</p>
+        </header>
+        
+        <div class="input-section">
+            <textarea
+                id="textarea"
+                class="textarea"
+                placeholder="Start typing your text here..."
+                maxlength="150"
+                rows="5"
+            ></textarea>
+        </div>
+
+        <div class="counter-container">
+            <div class="counter-box">
+                <p class="counter-label">Total Characters:</p>
+                <span class="total-counter" id="total-counter">0</span>
+            </div>
+            <div class="counter-box">
+                <p class="counter-label">Remaining:</p>
+                <span class="remaining-counter" id="remaining-counter">150</span>
+            </div>
+        </div>
+
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+            </div>
+            <span class="progress-text" id="progress-text">0%</span>
+        </div>
+
+        <div class="features">
+            <button class="btn" id="clear-btn">Clear Text</button>
+            <button class="btn" id="copy-btn">Copy Text</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>Built with HTML, CSS & JavaScript</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
